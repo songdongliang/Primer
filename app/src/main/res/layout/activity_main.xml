@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sdl.primer.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                style="@style/btn_match"
+                android:text="@string/view_drag_helper"
+                android:onClick="viewDragHelper"/>
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/custom_view"
+                android:onClick="customView"/>
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/reverse_circle_progress"
+                android:onClick="reverseCircleProgress"/>
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/check_permissions"
+                android:onClick="checkPermissions"
+                />
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/webP"
+                android:onClick="webP"
+                />
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/Sliding_Pane_Layout"
+                android:onClick="slidingPaneLayout"
+                />
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/test_socket"
+                android:onClick="testSocket"
+                />
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/recycler_item_anim"
+                android:onClick="recyclerViewAnim"
+                />
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/scroller_view"
+                android:onClick="scrollerView"
+                />
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/net"
+                android:onClick="net"
+                />
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/reuse_bitmap"
+                android:onClick="reuseBitmap"
+                />
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/meizu_calendar"
+                android:onClick="calendar"/>
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/behavior_sample_title"
+                android:onClick="simpleTitleBehavior"/>
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/behavior_advance"
+                android:onClick="behaviorAdvance"/>
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/banner"
+                android:onClick="banner"/>
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/live_data"
+                android:onClick="liveData"/>
+
+            <Button
+                style="@style/btn_match"
+                android:text="@string/navigation"
+                android:onClick="navigation"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

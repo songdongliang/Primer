@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Primer</string>
+    <string name="view_drag_helper">view_drag_helper</string>
+    <string name="custom_view">custom_view</string>
+    <string name="reverse_circle_progress">reverse_circle_progress</string>
+    <string name="take_photo">take photo</string>
+    <string name="success">success</string>
+    <string name="failure">failure</string>
+    <string name="check_permissions">check_permissions</string>
+    <string name="webP">webP</string>
+    <string name="hello_world">hello world</string>
+    <string name="Sliding_Pane_Layout">Sliding_Pane_Layout</string>
+    <string name="send">send</string>
+    <string name="test_socket">test_socket</string>
+    <string name="simple_animator">simple_animator</string>
+    <string name="recycler_item_anim">recycler_item_anim</string>
+    <string name="scroller_view">scroller_view</string>
+    <string name="net_cache">net_cache</string>
+    <string name="net">net</string>
+    <string name="request">request</string>
+    <string name="reuse_bitmap">reuse_bitmap</string>
+    <string name="meizu_calendar">meizu_calendar</string>
+
+    <string name="behavior_sample_title">com.sdl.primer.ui.customview.SampleTitleBehavior</string>
+    <string name="behavior_header">com.sdl.primer.ui.behavior.SampleHeaderBehavior</string>
+    <string name="behavior_recycler_view">com.sdl.primer.ui.behavior.RecyclerViewBehavior</string>
+    <string name="behavior_advance">behavior_advance</string>
+    <string name="banner">banner</string>
+    <string name="live_data">live_data</string>
+    <string name="live_data_show">I\'m live data, this is show data</string>
+    <string name="update_data">update_data</string>
+    <string name="main_fragment_title">MainFragmentTitle</string>
+    <string name="settings">设置</string>
+    <string name="main2_fragment_title">Main2FragmentTitle</string>
+    <string name="navigation">navigation</string>
+
+    <string-array name="english_week_string_array">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+</resources>
