@@ -33,6 +33,7 @@
     <string name="settings">设置</string>
     <string name="main2_fragment_title">Main2FragmentTitle</string>
     <string name="navigation">navigation</string>
+    <string name="simple_decoration">simple_decoration</string>
 
     <string-array name="english_week_string_array">
         <item>日</item>

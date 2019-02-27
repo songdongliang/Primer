@@ -19,6 +19,7 @@ import com.sdl.primer.ui.activity.ReuseBitmapActivity;
 import com.sdl.primer.ui.activity.ReverseColorProgressActivity;
 import com.sdl.primer.ui.activity.SampleTitleBehaviorActivity;
 import com.sdl.primer.ui.activity.ScrollerViewActivity;
+import com.sdl.primer.ui.activity.SimpleSuspensionActivity;
 import com.sdl.primer.ui.activity.SlidingPaneLayoutActivity;
 import com.sdl.primer.ui.activity.ViewDragHelperActivity;
 
@@ -156,6 +157,10 @@ public class MainActivity extends AppCompatActivity {
      */
     public void liveData(View view) {
         jumpActivity(LiveDataActivity.class);
+    }
+
+    public void simpleSuspension(View view) {
+        jumpActivity(SimpleSuspensionActivity.class);
     }
 
 

@@ -108,8 +108,9 @@
 
             <Button
                 style="@style/btn_match"
-                android:text="@string/navigation"
-                android:onClick="navigation"/>
+                android:text="@string/simple_decoration"
+                android:onClick="simpleSuspension"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
