@@ -129,8 +129,8 @@ class SimpleSuspensionDecoration(mContext: Context): RecyclerView.ItemDecoration
 //                top = (firstVisibleView?.top ?: 0) + d
 //                Log.i("decoration", "top---> $top")
 //            } else {
-//                // TODO 这里有改动
-//                top = (firstVisibleView?.bottom ?: 0) - mTitleHeight.toInt()
+//                val d = mTitleHeight - (firstVisibleView?.height ?: 0)
+//                top = (firstVisibleView?.top ?: 0) - d.toInt() ;// 这里有bug,mTitleHeight过高时 滑动有问题
 //            }
             top = (firstVisibleView?.bottom ?: 0) - mTitleHeight.toInt()
             bottom = firstVisibleView?.bottom ?: 0
