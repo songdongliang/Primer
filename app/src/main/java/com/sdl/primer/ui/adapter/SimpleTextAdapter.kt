@@ -6,11 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.sdl.primer.R
+import com.sdl.primer.ui.bean.GroupIdName
 
 /**
  * create by songdongliang on 2019/2/26
  */
-class SimpleTextAdapter(val mContext: Context): RecyclerView.Adapter<SimpleTextAdapter.ViewHolder>() {
+class SimpleTextAdapter(val mContext: Context, val list: ArrayList<GroupIdName>)
+    : RecyclerView.Adapter<SimpleTextAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
         val view = LayoutInflater.from(mContext)
@@ -19,7 +21,7 @@ class SimpleTextAdapter(val mContext: Context): RecyclerView.Adapter<SimpleTextA
     }
 
     override fun getItemCount(): Int {
-        return 16
+        return list.size
     }
 
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
