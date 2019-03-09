@@ -20,7 +20,7 @@ class SimpleSuspensionDecoration(mContext: Context): RecyclerView.ItemDecoration
 
     private var mTitleTextSize: Float = 0f
 
-    private val textRext: Rect by lazy {
+    private val textRect: Rect by lazy {
         Rect()
     }
 
@@ -87,9 +87,9 @@ class SimpleSuspensionDecoration(mContext: Context): RecyclerView.ItemDecoration
                 c.drawRect(left.toFloat(), top, right.toFloat(), bottom.toFloat(), mPaint)
 
                 val groupName = callback?.getGroupName(position) ?: "无组名"
-                mTextPaint.getTextBounds(groupName, 0, groupName.length, textRext)
+                mTextPaint.getTextBounds(groupName, 0, groupName.length, textRect)
                 val x = view.paddingLeft
-                val y = top + (mTitleHeight - textRext.height()) / 2 + textRext.height()
+                val y = top + (mTitleHeight - textRect.height()) / 2 + textRect.height()
                 c.drawText(groupName, x.toFloat(), y, mTextPaint)
             } else {
                 val top = view.top - 1
@@ -138,9 +138,9 @@ class SimpleSuspensionDecoration(mContext: Context): RecyclerView.ItemDecoration
         c.drawRect(left.toFloat(), top.toFloat(), right.toFloat(), bottom.toFloat(), mPaint)
 
         val groupName = callback?.getGroupName(position) ?: "无组名"
-        mTextPaint.getTextBounds(groupName, 0, groupName.length, textRext)
+        mTextPaint.getTextBounds(groupName, 0, groupName.length, textRect)
         val x = left + (firstVisibleView?.paddingLeft ?: 0)
-        val y = top + (mTitleHeight - textRext.height()) / 2 + textRext.height()
+        val y = top + (mTitleHeight - textRect.height()) / 2 + textRect.height()
         Log.i("decoration", "yyyy---> $y")
         c.drawText(groupName, x.toFloat(), y, mTextPaint)
     }
