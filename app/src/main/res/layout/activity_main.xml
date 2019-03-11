@@ -111,6 +111,11 @@
                 android:text="@string/simple_decoration"
                 android:onClick="simpleSuspension"/>
 
+            <Button
+                style="@style/btn_match"
+                android:text="@string/worker"
+                android:onClick="worker"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

@@ -22,6 +22,7 @@ import com.sdl.primer.ui.activity.ScrollerViewActivity;
 import com.sdl.primer.ui.activity.SimpleSuspensionActivity;
 import com.sdl.primer.ui.activity.SlidingPaneLayoutActivity;
 import com.sdl.primer.ui.activity.ViewDragHelperActivity;
+import com.sdl.primer.worker.WorkerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -159,10 +160,21 @@ public class MainActivity extends AppCompatActivity {
         jumpActivity(LiveDataActivity.class);
     }
 
+    /**
+     * recyclerView的悬浮
+     * @param view
+     */
     public void simpleSuspension(View view) {
         jumpActivity(SimpleSuspensionActivity.class);
     }
 
+    /**
+     * worker
+     * @param view
+     */
+    public void worker(View view) {
+        jumpActivity(WorkerActivity.class);
+    }
 
     public void jumpActivity(Class clazz){
         startActivity(new Intent(this,clazz));
