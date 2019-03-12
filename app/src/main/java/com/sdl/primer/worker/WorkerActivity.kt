@@ -18,7 +18,7 @@ class WorkerActivity : AppCompatActivity() {
             .putString("time", dateFormat.format(Date()))
             .build()
 
-    var outputData: Data? = null
+//    var outputData: Data? = null
 
     private val mWorkManager by lazy {
         WorkManager.getInstance()
@@ -28,7 +28,12 @@ class WorkerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_worker)
 
+        val constraints = Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .build()
+
         val request = OneTimeWorkRequestBuilder<MainWorker>()
+                .setConstraints(constraints)
                 .setInputData(data)
                 .build()
 
@@ -42,19 +47,5 @@ class WorkerActivity : AppCompatActivity() {
                     }
                 })
         mTextWork.text = "hello word"
-    }
-
-    inner class MainWorker(context: Context, workerParams: WorkerParameters)
-        : Worker(context, workerParams) {
-
-        override fun doWork(): Result {
-            Log.d("WorkManager", inputData.getString("time"))
-            Thread.sleep(2000)
-            outputData = Data.Builder()
-                    .putString("name", "SouthernBox")
-                    .build()
-            return Result.success()
-        }
-
     }
 }
