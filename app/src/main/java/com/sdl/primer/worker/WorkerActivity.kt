@@ -37,7 +37,15 @@ class WorkerActivity : AppCompatActivity() {
                 .setInputData(data)
                 .build()
 
-        mWorkManager.enqueue(request)
+        val continuation = mWorkManager.beginWith(request)
+
+        for (i in 0 until 6) {
+            val builder = OneTimeWorkRequestBuilder<MainWorker>()
+            continuation.then(builder.build())
+        }
+        continuation.enqueue()
+
+
         mWorkManager.getWorkInfoByIdLiveData(request.id)
                 .observe(this, android.arch.lifecycle.Observer { workInfo ->
                     workInfo?.apply {
