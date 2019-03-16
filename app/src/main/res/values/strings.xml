@@ -35,6 +35,10 @@
     <string name="navigation">navigation</string>
     <string name="simple_decoration">simple_decoration</string>
     <string name="worker">worker</string>
+    <string name="select_image">select image</string>
+    <!-- Messages -->
+    <string name="set_permissions_in_settings">Go to Settings -> Apps and Notifications ->
+        WorkManager Demo -> App Permissions and grant access to Storage.</string>
 
     <string-array name="english_week_string_array">
         <item>日</item>

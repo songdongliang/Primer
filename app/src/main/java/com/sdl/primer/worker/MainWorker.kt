@@ -15,8 +15,9 @@ class MainWorker(context: Context, workerParams: WorkerParameters)
     override fun doWork(): Result { // running a background thread
         return try {
             Thread.sleep(2000)
+            Log.i("songdongliang", inputData.getLong("name", 0).toString())
             val outputData = Data.Builder()
-                    .putInt("name", inputData.getInt("name", 0))
+                    .putLong("name", System.currentTimeMillis())
                     .build()
             Result.success(outputData)
         } catch (e: Exception) {

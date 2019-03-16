@@ -35,25 +35,33 @@ class WorkerActivity : AppCompatActivity() {
         val request = OneTimeWorkRequestBuilder<MainWorker>()
                 .setConstraints(constraints)
                 .setInputData(data)
+                .addTag(REQUEST_TAG)
                 .build()
 
-        val continuation = mWorkManager.beginWith(request)
+        var continuation = mWorkManager.beginWith(request)
 
         for (i in 0 until 6) {
             val builder = OneTimeWorkRequestBuilder<MainWorker>()
-            continuation.then(builder.build())
+            builder.addTag(REQUEST_TAG)
+            continuation = continuation.then(builder.build())
         }
         continuation.enqueue()
 
 
-        mWorkManager.getWorkInfoByIdLiveData(request.id)
-                .observe(this, android.arch.lifecycle.Observer { workInfo ->
-                    workInfo?.apply {
-                        if (state.isFinished) {
-                            mTextWork.text = outputData.getString("name").toString()
+        mWorkManager.getWorkInfosByTagLiveData(REQUEST_TAG)
+                .observe(this, android.arch.lifecycle.Observer { workInfos ->
+                    workInfos?.apply {
+                        for (workInfo in workInfos) {
+                            if (workInfo.state.isFinished) {
+                                mTextWork.text = workInfo.outputData.getLong("name", -1).toString()
+                            }
                         }
                     }
                 })
         mTextWork.text = "hello word"
+    }
+
+    companion object {
+        const val REQUEST_TAG = "xxx"
     }
 }
