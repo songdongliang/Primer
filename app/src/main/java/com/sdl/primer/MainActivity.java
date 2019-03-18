@@ -23,6 +23,8 @@ import com.sdl.primer.ui.activity.SimpleSuspensionActivity;
 import com.sdl.primer.ui.activity.SlidingPaneLayoutActivity;
 import com.sdl.primer.ui.activity.ViewDragHelperActivity;
 import com.sdl.primer.worker.WorkerActivity;
+import com.sdl.primer.worker.blur.BlurActivity;
+import com.sdl.primer.worker.blur.SelectImageActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -173,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void worker(View view) {
-        jumpActivity(WorkerActivity.class);
+        jumpActivity(SelectImageActivity.class);
     }
 
     public void jumpActivity(Class clazz){
