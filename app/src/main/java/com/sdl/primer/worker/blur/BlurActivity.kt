@@ -59,7 +59,7 @@ class BlurActivity : AppCompatActivity() {
             // We only care about the one output status.
             // Every continuation has only one worker tagged TAG_OUTPUT
             val workInfo = listOfWorkInfo[0]
-            if (workInfo.state.isFinished) {
+            if (!workInfo.state.isFinished) {
                 showWorkInProgress()
             } else {
                 showWorkFinish()
