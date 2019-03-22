@@ -116,6 +116,11 @@
                 android:text="@string/worker"
                 android:onClick="worker"/>
 
+            <Button
+                style="@style/btn_match"
+                android:text="@string/constraint_set"
+                android:onClick="constraint"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

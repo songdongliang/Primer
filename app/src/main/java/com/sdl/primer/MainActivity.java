@@ -8,6 +8,7 @@ import android.view.View;
 import com.sdl.primer.animator.RecyclerViewActivity;
 import com.sdl.primer.ipc.TcpClientActivity;
 import com.sdl.primer.livedata3.LiveDataActivity;
+import com.sdl.primer.motion.ConstraintSetExampleActivity;
 import com.sdl.primer.net.NetActivity;
 import com.sdl.primer.newnothing.WebPActivity;
 import com.sdl.primer.ui.activity.BannerActivity;
@@ -176,6 +177,10 @@ public class MainActivity extends AppCompatActivity {
      */
     public void worker(View view) {
         jumpActivity(SelectImageActivity.class);
+    }
+
+    public void constraint(View view) {
+        jumpActivity(ConstraintSetExampleActivity.class);
     }
 
     public void jumpActivity(Class clazz){
