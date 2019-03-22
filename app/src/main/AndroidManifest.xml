@@ -17,6 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
+        <activity android:name=".test.FragmentRecyclerActivity">
+        </activity>
         <activity android:name=".motion.ConstraintSetExampleActivity">
         </activity>
         <activity android:name=".worker.blur.BlurActivity">

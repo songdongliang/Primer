@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.support.constraint.ConstraintSet
+import android.support.transition.AutoTransition
 import android.support.transition.TransitionManager
 import android.view.View
 import com.sdl.primer.R
@@ -58,6 +59,8 @@ class ConstraintSetExampleActivity : AppCompatActivity() {
     }
 
     fun toggleMode(view: View) {
+        val transition = AutoTransition()
+        transition.duration = 1000
         TransitionManager.beginDelayedTransition(mRootLayout)
         mShowBigImage = !mShowBigImage
         applyConfig()

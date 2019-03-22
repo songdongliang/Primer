@@ -11,6 +11,7 @@ import com.sdl.primer.livedata3.LiveDataActivity;
 import com.sdl.primer.motion.ConstraintSetExampleActivity;
 import com.sdl.primer.net.NetActivity;
 import com.sdl.primer.newnothing.WebPActivity;
+import com.sdl.primer.test.FragmentRecyclerActivity;
 import com.sdl.primer.ui.activity.BannerActivity;
 import com.sdl.primer.ui.activity.BehaviorAdvanceActivity;
 import com.sdl.primer.ui.activity.CalendarActivity;
