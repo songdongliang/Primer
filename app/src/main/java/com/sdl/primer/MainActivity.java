@@ -9,6 +9,7 @@ import com.sdl.primer.animator.RecyclerViewActivity;
 import com.sdl.primer.ipc.TcpClientActivity;
 import com.sdl.primer.livedata3.LiveDataActivity;
 import com.sdl.primer.motion.ConstraintSetExampleActivity;
+import com.sdl.primer.motion.MotionActivity;
 import com.sdl.primer.net.NetActivity;
 import com.sdl.primer.newnothing.WebPActivity;
 import com.sdl.primer.test.FragmentRecyclerActivity;
@@ -182,6 +183,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void constraint(View view) {
         jumpActivity(ConstraintSetExampleActivity.class);
+    }
+
+    public void motion(View view) {
+        jumpActivity(MotionActivity.class);
     }
 
     public void jumpActivity(Class clazz){

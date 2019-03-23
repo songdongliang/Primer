@@ -121,6 +121,11 @@
                 android:text="@string/constraint_set"
                 android:onClick="constraint"/>
 
+            <Button
+                style="@style/btn_match"
+                android:text="@string/motion"
+                android:onClick="motion"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

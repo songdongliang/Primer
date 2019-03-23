@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
+        <activity android:name=".motion.MotionActivity"
+            >
+        </activity>
         <activity android:name=".test.FragmentRecyclerActivity">
         </activity>
         <activity android:name=".motion.ConstraintSetExampleActivity">
@@ -82,6 +85,10 @@
         <activity android:name=".livedata3.DemoActivity">
         </activity>
         <activity android:name=".livedata3.LiveDataActivity">
+        </activity>
+        <activity android:name=".motion.DemoActivity"
+                  android:theme="@style/Theme.AppCompat.Translucent">
+
         </activity>
     </application>
 
