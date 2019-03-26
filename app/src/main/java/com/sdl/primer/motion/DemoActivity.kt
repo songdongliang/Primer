@@ -20,10 +20,10 @@ class DemoActivity: AppCompatActivity() {
         val layout = intent.getIntExtra("layout_file_id", R.layout.motion_01_basic)
         setContentView(layout)
 
-//        if (layout == R.layout.motion_11_coordinatorlayout) {
-//            val icon = findViewById<ImageView>(R.id.icon)
-//            icon?.clipToOutline = true
-//        }
+        if (layout == R.layout.motion_11_coordinatorlayout) {
+            val icon = findViewById<ImageView>(R.id.icon)
+            icon?.clipToOutline = true
+        }
 
         val debugMode = if (intent.getBooleanExtra("showPaths", false)) {
             MotionLayout.DEBUG_SHOW_PATH
