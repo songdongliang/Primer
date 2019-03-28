@@ -90,6 +90,8 @@
                   android:theme="@style/Theme.AppCompat.Translucent">
 
         </activity>
+        <activity android:name=".motion.ViewPagerActivity"/>
+        <activity android:name=".motion.ViewPagerActivity2"/>
     </application>
 
 </manifest>

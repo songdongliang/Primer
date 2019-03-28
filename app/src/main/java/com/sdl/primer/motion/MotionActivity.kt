@@ -29,7 +29,12 @@ class MotionActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListen
             DemosAdapter.Demo("CoordinatorLayout Example (1/3)", "Basic example of using MotionLayout instead of AppBarLayout", R.layout.motion_09_coordinatorlayout),
             DemosAdapter.Demo("CoordinatorLayout Example (2/3)", "Slightly more complex example of MotionLayout replacing AppBarLayout, with multiple elements and parallax background", R.layout.motion_10_coordinatorlayout),
             DemosAdapter.Demo("CoordinatorLayout Example (3/3)", "Another AppBarLayout replacement example", R.layout.motion_11_coordinatorlayout),
-            DemosAdapter.Demo("DrawerLayout Example (1/2)", "Basic DrawerLayout with MotionLayout", R.layout.motion_12_drawerlayout)
+            DemosAdapter.Demo("DrawerLayout Example (1/2)", "Basic DrawerLayout with MotionLayout", R.layout.motion_12_drawerlayout),
+            DemosAdapter.Demo("DrawerLayout Example (2/2)", "Advanced DrawerLayout with MotionLayout", R.layout.motion_13_drawerlayout),
+            DemosAdapter.Demo("Side Panel Example", "Side Panel, implemented with MotionLayout only", R.layout.motion_14_side_panel),
+            DemosAdapter.Demo("Parallax Example", "Parallax background. Drag the car.", R.layout.motion_15_parallax),
+            DemosAdapter.Demo("ViewPager Example", "Using MotionLayout with ViewPager", ViewPagerActivity::class.java),
+            DemosAdapter.Demo("ViewPager Lottie Example", "Using MotionLayout and Lottie with ViewPager", ViewPagerActivity2::class.java)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
